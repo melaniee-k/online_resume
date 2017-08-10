@@ -1,0 +1,506 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+/* Generic Styles */
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  color:#808080;
+  border-bottom: 2px solid #808080;
+}
+
+span {
+  padding: 5px;
+}
+/* Header */
+.header-info {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.header-info h1 {
+  font-size: 160px;
+  line-height:0.9;
+  margin:0;
+  display:;
+}
+
+.header-info h2{
+  color: #808080;
+  margin:0;
+  font-size:38px;
+  border-bottom:none;
+  margin-bottom: 5px;
+
+}
+.header-info .welcome-message{
+  background: #FFA500;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+}
+.first-name{
+  font-weight:700;
+  color: #FFA500;
+}
+.last-name{
+  font-weight:300;
+  color: 	#808080;
+}
+
+.biopic {
+  border-radius: 100%;
+  width: 60%;
+  height: 60%;
+  padding:1px;
+  border:8px solid #FFA500;
+}
+
+/* Top Contact */
+#topContacts {
+  width: 100%;
+  margin: 1em 0;
+
+}
+.topContacts-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-left: 0;
+  background-color: orange;
+
+}
+.contact-item {
+      list-style: none;
+      display: inline-block;
+      width: calc(100% / 3);
+      text-align: center;
+ }
+
+ /* Footer */
+ #footer {
+   width: 100%;
+   background-color: orange;
+ }
+ .footer-info {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   padding-left: 0;
+ }
+ .contact-item {
+       list-style: none;
+       display: inline-block;
+       width: calc(100% / 5);
+       height: 30px;
+       text-align: center;
+       color:#fff;
+
+  }
+/* chartjs library from: http://www.chartjs.org/docs/#Pie-Doughnut-Chart */
+/* Skills */
+.skills-chart-holder{
+  width:100%;
+  text-align: center;
+}
+#skills-list{
+  margin: 20px 0;
+  text-align: center;
+}
+#skills-list .label{
+  margin: 5px;
+}
+#skills-list .orange{
+  background-color: #FFA500;
+}
+#skills-list .blue{
+  background-color: #6495ED;
+}
+#skills-list .red{
+  background-color: #FF0000;
+}
+#skills-list .green{
+  background-color: #90EE90;
+}
+#skills-list .yellow{
+  background-color: #FFD700;
+}
+#skills-list .pink{
+  background-color: #FF7F50 ;
+}
+#skills-list .purple{
+  background-color:  #ff99ff ;
+}
+#skills-list .turquoise {
+  background-color: #33cccc ;
+}
+#skills-list .peach {
+  background-color: #ffcc66 ;
+}
+/* Education, Work and Project*/
+.education-entry, .work-entry, .project-entry {
+  margin: 15px 0;
+}
+.entry-name,
+.entry-location{
+  font-size: 18px;
+  color:#00BFFF;
+}
+span.entry-name,
+span.entry-location{
+  padding: 0;
+}
+.entry-name a{
+  color: #FFA500;
+  display:inline-block;
+  margin:0;
+}
+.entry-title{
+  color: #FFA500;
+  font-size: 24px;
+}
+.entry-date{
+  font-size: 14px;
+}
+.date-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999999;
+  line-height: 16px;
+  float: left;
+}
+
+.location-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999999;
+  line-height: 16px;
+  float: right;
+
+}
+.education-entry a{
+  display:inline-block;
+  margin:0;
+}
+.project-entry .entry-date{
+  color:#999999;
+}
+
+.project-entry .btn,
+#skills-list .label{
+  border-radius:0;
+}
+
+.project-entry .btn{
+  margin: 5px;
+}
+
+.project-entry .btn-info{
+  background: #FFA500;
+  border:0;
+}
+
+.project-entry .btn-info:hover,
+.project-entry .btn-info:focus,
+.project-entry .btn-info:active{
+  background: #14A7D8;
+}
+
+/* Hobbies and Awards */
+.hobbies {
+  list-style-type:none;
+  line-height: 30px;
+}
+/* Languages and Maps */
+.progress{
+  border-radius: 0;
+}
+
+#map {
+  display: block;
+  height: 100%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .header-info{
+    text-align: center;
+  }
+  .header-info h1{
+    font-size: 100px;
+  }
+  .header-info h2{
+    font-size: 24px;
+  }
+  .header-info .welcome-message{
+    margin: 0 auto;
+  }
+  .biopic {
+    margin-top: 1%;
+    margin-left: 20%;
+  }
+  #footer li {
+    display: inline-block;
+  }
+  #footer{
+    float: left;
+  }
+  #footer h2{
+    text-align: left;
+  }
+
+  #footer ul li{
+    display: inline-block;
+    border-bottom: none;
+    padding: 5px;
+  }
+  #footer ul li span{
+    margin: 0;
+    padding-right: 5px;
+}
+
+/* Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .header-info{
+    text-align: center;
+  }
+  .header-info h1{
+    font-size: 100px;
+  }
+  .header-info h2{
+    font-size: 24px;
+  }
+  .header-info .welcome-message{
+    width: 445px;
+    margin: 0 auto;
+  }
+  .biopic {
+    margin-top: 1%;
+    margin-left: 20%;
+  }
+  #footer{
+    float: left;
+  }
+  #footer h2{
+    text-align: left;
+  }
+
+  #footer ul li{
+    display: inline-block;
+    border-bottom: none;
+    padding: 5px;
+  }
+  #footer ul li span{
+    margin: 0;
+    padding-right: 5px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+  .header-info{
+    text-align: center;
+  }
+  .header-info h1{
+    font-size: 130px;
+  }
+  .header-info h2{
+    font-size: 31px;
+  }
+  .header-info .welcome-message{
+    width: 500px;
+    margin: 0 auto;
+  }
+  .biopic {
+    margin-top: 20px;
+    margin-left: 140px;
+  }
+  #footer{
+    float: left;
+  }
+  #footer h2{
+    text-align: left;
+  }
+  #footer ul li{
+    display: inline-block;
+    border-bottom: none;
+    padding: 5px;
+  }
+  #footer ul li span{
+    margin: 0;
+    padding-right: 5px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .header-info{
+    text-align: left;
+  }
+  .header-info h1{
+    font-size: 100px;
+  }
+  .header-info h2{
+    font-size: 31px;
+  }
+  .header-info .welcome-message{
+    width: 100%;
+  }
+  .biopic {
+   margin-top: 20px;
+   margin-left: 100px;
+  }
+  #footer{
+    float: left;
+  }
+  #footer ul li{
+    display: block;
+    border-bottom: 1px solid #333;
+    padding: 5px 0;
+  }
+  #footer ul li span{
+    margin: 0;
+    padding-right: 20px;
+  }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .header-info{
+    text-align: left;
+  }
+  .header-info h1{
+    font-size: 120px;
+  }
+  .header-info h2{
+    font-size: 38px;
+  }
+  .header-info .welcome-message{
+    width: 100%;
+  }
+  #footer{
+    float: left;
+  }
+  #footer h2{
+    text-align: left;
+  }
+
+  #footer ul li{
+    display: block;
+    border-bottom: 1px solid #333;
+    padding: 5px 0;
+  }
+  #footer ul li span{
+    margin: 0;
+    padding-right: 20px;
+  }
+}
+
+/* Radial Progress Source Code http://www.brightpointinc.com/download/radial-progress-source-code/ */
+
+/**
+ Copyright (c) 2014 BrightPoint Consulting, Inc.
+
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation
+ files (the "Software"), to deal in the Software without
+ restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following
+ conditions:
+
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+.background {
+    fill: #FFFFFF;
+    fill-opacity: 0.01;
+}
+
+.component {
+    fill: #ccc;
+}
+
+.component .label {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-weight: 300;
+    text-anchor: middle;
+    fill: #09c;
+}
+
+.arc {
+    stroke-weight:0.01;
+    fill:#FFA500;
+}
+
+.label {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-weight: 300;
+    text-anchor: middle;
+}
+
+.radial-svg {
+    display: block;
+    margin: 0 auto;
+}
+
+/* End */
+
+
+/*credit to Zack Wallace https://codepen.io/zackw/pen/FcIaq found on https://www.sitepoint.com/making-simple-image-slider-html-css-jquery/ */
+/* slideshow */
+body { margin:10px auto; text-align:center; }
+.content { max-width:800px;text-align:left; margin:auto; }
+
+/* the div */
+.simple-ss {
+  width:550px;
+  height:300px;
+  margin:auto;
+  background-image:url("https://farm5.staticflickr.com/4423/36327505821_b8eb085e0c_k.jpg");
+  background-position:0;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+/* animation */
+  animation-name: slide;
+  animation-duration: 13s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+/* slide */
+@keyframes slide {
+  0% {background-position:0 0;}
+  16.66% {background-position:0 0;}
+  33.32% {background-position:-800px 0;}
+  49.98% {background-position:-800px 0;}
+  66.64% {background-position:-1600px 0;}
+  83.30% {background-position:-1600px 0;}
+  100% {background-position:0 0;}
+}
